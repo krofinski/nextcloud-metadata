@@ -27,3 +27,48 @@
 .metadata-tab-view .value:hover {
     white-space: pre-wrap;
 }
+
+.metadata-map-dialog {
+    width: 900px;
+    height: 680px;
+    max-width: 95vw;
+    max-height: 95vh;
+    padding: 0;
+    border: none;
+    border-radius: var(--border-radius-large, 10px);
+    background-color: var(--color-main-background, #fff);
+    color: var(--color-main-text, #222);
+    box-shadow: 0 0 40px var(--color-box-shadow, rgba(0, 0, 0, .3));
+    overflow: hidden;
+}
+
+.metadata-map-dialog[open] {
+    display: flex;
+    flex-direction: column;
+}
+
+.metadata-map-dialog::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.metadata-map-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 16px;
+    font-weight: bold;
+}
+
+.metadata-map-close {
+    min-height: 34px;
+    min-width: 34px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.metadata-map-body {
+    flex: 1;
+    min-height: 0;
+}
