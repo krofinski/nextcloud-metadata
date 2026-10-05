@@ -1,7 +1,6 @@
 <?php
 namespace OCA\Metadata\Controller;
 
-use OC\Files\Filesystem;
 use OCA\Metadata\AppInfo\Application;
 use OCA\Metadata\Service\MetadataService;
 use OCP\AppFramework\Controller;
